@@ -12,9 +12,9 @@ time.sleep(3)
 pyautogui.press("space")
 go_on = True
 while go_on:
-    background_down = pyautogui.screenshot(region=(160, 100, 310, 1)).convert("1")
+    background_down = pyautogui.screenshot(region=(160, 100, 300, 1)).convert("1")
     background_up = pyautogui.screenshot(region=(160, 100, 280, 1)).convert("1")
-    down = pyautogui.screenshot(region=(200, 592, 310, 1)).convert("1")
+    down = pyautogui.screenshot(region=(200, 592, 300, 1)).convert("1")
     up = pyautogui.screenshot(region=(200, 496, 280, 1)).convert("1")
     if ImageChops.difference(background_down, down).getbbox():
         pyautogui.press("space")
